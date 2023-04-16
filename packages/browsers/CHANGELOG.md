@@ -1,5 +1,32 @@
 # Changelog
 
+## [0.5.0](https://github.com/puppup420247-org/puppeteer/compare/browsers-v0.4.1...browsers-v0.5.0) (2023-04-16)
+
+
+### Features
+
+* browsers: recognize chromium as a valid browser ([#9760](https://github.com/puppup420247-org/puppeteer/issues/9760)) ([04247a4](https://github.com/puppup420247-org/puppeteer/commit/04247a4e00b43683977bd8aa309d493eee663735))
+* **browsers:** support downloading chromedriver ([#9990](https://github.com/puppup420247-org/puppeteer/issues/9990)) ([ef0fb5d](https://github.com/puppup420247-org/puppeteer/commit/ef0fb5d87299c604af2387ac1c72be317c50316d))
+* implement a command to clear the cache ([#9868](https://github.com/puppup420247-org/puppeteer/issues/9868)) ([b8d38cb](https://github.com/puppup420247-org/puppeteer/commit/b8d38cb05f7eedf554ed46f2f7428b621197d1cc))
+* implement system channels for chrome in browsers ([#9844](https://github.com/puppup420247-org/puppeteer/issues/9844)) ([dec48a9](https://github.com/puppup420247-org/puppeteer/commit/dec48a95923e21a054c1d70d22c14001a0150293))
+* initial release of browsers ([#9722](https://github.com/puppup420247-org/puppeteer/issues/9722)) ([#9727](https://github.com/puppup420247-org/puppeteer/issues/9727)) ([86a2d1d](https://github.com/puppup420247-org/puppeteer/commit/86a2d1dd3b2c024b886c6280e08a2d7dc8caabc5))
+* update Chrome browser binaries ([#9917](https://github.com/puppup420247-org/puppeteer/issues/9917)) ([fcb233c](https://github.com/puppup420247-org/puppeteer/commit/fcb233ce949f5f716aee39253e910104b04aa000))
+
+
+### Bug Fixes
+
+* add browsers entry point ([#9846](https://github.com/puppup420247-org/puppeteer/issues/9846)) ([1a1e79d](https://github.com/puppup420247-org/puppeteer/commit/1a1e79d046ccad6fe843aa219501c17da08bc498))
+* **browsers:** update package json ([#9968](https://github.com/puppup420247-org/puppeteer/issues/9968)) ([817288c](https://github.com/puppup420247-org/puppeteer/commit/817288cd901121ddc8a44226eda689bb784cee61))
+* **browsers:** various fixes and improvements ([#9966](https://github.com/puppup420247-org/puppeteer/issues/9966)) ([f1211cb](https://github.com/puppup420247-org/puppeteer/commit/f1211cbec091ec669de019aeb7fb4f011a81c1d7))
+* bump @puppeteer/browsers ([#9938](https://github.com/puppup420247-org/puppeteer/issues/9938)) ([2a29d30](https://github.com/puppup420247-org/puppeteer/commit/2a29d30d1790b47c99f8d196b3844364d351acbd))
+* change the install output to include the executable path ([#9797](https://github.com/puppup420247-org/puppeteer/issues/9797)) ([8cca7bb](https://github.com/puppup420247-org/puppeteer/commit/8cca7bb7a2a1cdf62919d9c7eca62d6774e698db))
+* consider downloadHost as baseUrl ([#9973](https://github.com/puppup420247-org/puppeteer/issues/9973)) ([05a44af](https://github.com/puppup420247-org/puppeteer/commit/05a44afe5affcac9fe0f0a2e83f17807c99b2f0c))
+* define options per command ([#9733](https://github.com/puppup420247-org/puppeteer/issues/9733)) ([8bae054](https://github.com/puppup420247-org/puppeteer/commit/8bae0545b7321d398dae3f522952dd981111587e))
+* export ChromeReleaseChannel ([#9851](https://github.com/puppup420247-org/puppeteer/issues/9851)) ([3e7a514](https://github.com/puppup420247-org/puppeteer/commit/3e7a514e556ddb4306aa3c15f24c512beaac65f4))
+* permissions for the browser CLI ([#9731](https://github.com/puppup420247-org/puppeteer/issues/9731)) ([e944931](https://github.com/puppup420247-org/puppeteer/commit/e944931de22726f35c5c83052892f8ab4667b035))
+* report install errors properly ([#10016](https://github.com/puppup420247-org/puppeteer/issues/10016)) ([7381229](https://github.com/puppup420247-org/puppeteer/commit/7381229a164e598e7523862f2438cd0cd1cd796a))
+* typo in the browsers package ([#9957](https://github.com/puppup420247-org/puppeteer/issues/9957)) ([c780384](https://github.com/puppup420247-org/puppeteer/commit/c7803844cf10b6edaa2da83134029b7acf5b45b2))
+
 ## [0.4.1](https://github.com/puppeteer/puppeteer/compare/browsers-v0.4.0...browsers-v0.4.1) (2023-04-13)
 
 

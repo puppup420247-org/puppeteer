@@ -2,6 +2,77 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [19.10.0](https://github.com/puppup420247-org/puppeteer/compare/puppeteer-core-v19.9.0...puppeteer-core-v19.10.0) (2023-04-16)
+
+
+### Features
+
+* ability to send headers via ws connection to browser in node.js environment ([#9314](https://github.com/puppup420247-org/puppeteer/issues/9314)) ([937fffa](https://github.com/puppup420247-org/puppeteer/commit/937fffaedc340ea12d5f6636d3ba6598cb22e397)), closes [#7218](https://github.com/puppup420247-org/puppeteer/issues/7218)
+* add element validation ([#9352](https://github.com/puppup420247-org/puppeteer/issues/9352)) ([c7a063a](https://github.com/puppup420247-org/puppeteer/commit/c7a063a15274856184356e15f2ae4be41191d309))
+* add ElementHandle.isVisible and ElementHandle.isHidden  ([#10007](https://github.com/puppup420247-org/puppeteer/issues/10007)) ([26c81b7](https://github.com/puppup420247-org/puppeteer/commit/26c81b7408a98cb9ef1aac9b57a038b699e6d518))
+* add ElementHandle.scrollIntoView ([#10005](https://github.com/puppup420247-org/puppeteer/issues/10005)) ([0d556a7](https://github.com/puppup420247-org/puppeteer/commit/0d556a71d6bcd5da501724ccbb4ce0be433768df))
+* add Page.waitForDevicePrompt ([#9299](https://github.com/puppup420247-org/puppeteer/issues/9299)) ([a5149d5](https://github.com/puppup420247-org/puppeteer/commit/a5149d52f54036a27a411bc070902b1eb3a7a629))
+* add touchstart, touchmove and touchend methods ([#9622](https://github.com/puppup420247-org/puppeteer/issues/9622)) ([c8bb11a](https://github.com/puppup420247-org/puppeteer/commit/c8bb11adfcf1537032730a91baa3c36a6e324926))
+* **chromium:** roll to Chromium 109.0.5412.0 (r1069273) ([#9364](https://github.com/puppup420247-org/puppeteer/issues/9364)) ([1875da6](https://github.com/puppup420247-org/puppeteer/commit/1875da61916df1fbcf98047858c01075bd9af189)), closes [#9233](https://github.com/puppup420247-org/puppeteer/issues/9233)
+* **chromium:** roll to Chromium 110.0.5479.0 (r1083080) ([#9500](https://github.com/puppup420247-org/puppeteer/issues/9500)) ([06e816b](https://github.com/puppup420247-org/puppeteer/commit/06e816bbfa7b9ca84284929f654de7288c51169d)), closes [#9470](https://github.com/puppup420247-org/puppeteer/issues/9470)
+* **chromium:** roll to Chromium 111.0.5556.0 (r1095492) ([#9656](https://github.com/puppup420247-org/puppeteer/issues/9656)) ([df59d01](https://github.com/puppup420247-org/puppeteer/commit/df59d010c20644da06eb4c4e28a11c4eea164aba))
+* **chromium:** roll to Chromium 112.0.5614.0 (r1108766) ([#9841](https://github.com/puppup420247-org/puppeteer/issues/9841)) ([eddb1f6](https://github.com/puppup420247-org/puppeteer/commit/eddb1f6ec3958b79fea297123f7621eb7beaff04))
+* **page:** Adding support for referrerPolicy in `page.goto` ([#9561](https://github.com/puppup420247-org/puppeteer/issues/9561)) ([e3d69ec](https://github.com/puppup420247-org/puppeteer/commit/e3d69ec554beeac37bd206a21921d2fed3cb968c))
+* **puppeteer-core:** Infer element type from complex selector ([#9253](https://github.com/puppup420247-org/puppeteer/issues/9253)) ([bef1061](https://github.com/puppup420247-org/puppeteer/commit/bef1061c064e5135d86a48fffd7278f3e7f4a29e))
+* **puppeteer-core:** keydown supports commands ([#9357](https://github.com/puppup420247-org/puppeteer/issues/9357)) ([b7ebc5d](https://github.com/puppup420247-org/puppeteer/commit/b7ebc5d9bb9b9940ffdf470e51d007f709587d40))
+* **puppeteer-core:** update Chrome launcher flags ([#9239](https://github.com/puppup420247-org/puppeteer/issues/9239)) ([ae87bfc](https://github.com/puppup420247-org/puppeteer/commit/ae87bfc2b4361556e3660a1de2c6db348ce663ae))
+
+
+### Bug Fixes
+
+* `page.goto` error throwing on 40x/50x responses with an empty body ([#9523](https://github.com/puppup420247-org/puppeteer/issues/9523)) ([#9577](https://github.com/puppup420247-org/puppeteer/issues/9577)) ([ddb0cc1](https://github.com/puppup420247-org/puppeteer/commit/ddb0cc174d2a14c0948dcdaf9bae78620937c667))
+* add filter to setDiscoverTargets for Firefox ([#9693](https://github.com/puppup420247-org/puppeteer/issues/9693)) ([c09764e](https://github.com/puppup420247-org/puppeteer/commit/c09764e4c43d7a62096f430b598d63f2b688e860))
+* atomically get Puppeteer utilities ([#9597](https://github.com/puppup420247-org/puppeteer/issues/9597)) ([050a7b0](https://github.com/puppup420247-org/puppeteer/commit/050a7b062415ebaf10bcb71c405143eacc4e5d4b))
+* bump chromium-bidi to a version that does not declare mitt as a peer dependency ([#9701](https://github.com/puppup420247-org/puppeteer/issues/9701)) ([82916c1](https://github.com/puppup420247-org/puppeteer/commit/82916c102b2c399093ba9019e272207b5ce81849))
+* call _detach on disconnect ([#9807](https://github.com/puppup420247-org/puppeteer/issues/9807)) ([bc1a04d](https://github.com/puppup420247-org/puppeteer/commit/bc1a04def8f699ad245c12ec69ac176e3e7e888d))
+* don't clean up previous browser versions ([#9568](https://github.com/puppup420247-org/puppeteer/issues/9568)) ([344bc2a](https://github.com/puppup420247-org/puppeteer/commit/344bc2af62e4068fe2cb8162d4b6c8242aac843b)), closes [#9533](https://github.com/puppup420247-org/puppeteer/issues/9533)
+* fallback to CSS ([#9876](https://github.com/puppup420247-org/puppeteer/issues/9876)) ([e6ec9c2](https://github.com/puppup420247-org/puppeteer/commit/e6ec9c295847fa0f1ec240952f0f2523bb13b7c8))
+* firefox revision resolution should not update chrome revision ([#9507](https://github.com/puppup420247-org/puppeteer/issues/9507)) ([f59bbf4](https://github.com/puppup420247-org/puppeteer/commit/f59bbf4014644dec6f395713e8403939aebe06ea)), closes [#9461](https://github.com/puppup420247-org/puppeteer/issues/9461)
+* fix circularity on JSHandle interface ([#9661](https://github.com/puppup420247-org/puppeteer/issues/9661)) ([eb13863](https://github.com/puppup420247-org/puppeteer/commit/eb138635d661d3cdaf2940959fece5aca482178a))
+* ignore extraInfo events if the response is served from cache ([#9983](https://github.com/puppup420247-org/puppeteer/issues/9983)) ([e7265c9](https://github.com/puppup420247-org/puppeteer/commit/e7265c9aa94e749de5745e5e98d45d4659f19d30))
+* ignore not found contexts for console messages ([#9595](https://github.com/puppup420247-org/puppeteer/issues/9595)) ([390685b](https://github.com/puppup420247-org/puppeteer/commit/390685bbe52c22b686fc0e3119b4ac7b1073c581))
+* implement protocol-level timeouts ([#9877](https://github.com/puppup420247-org/puppeteer/issues/9877)) ([510b36c](https://github.com/puppup420247-org/puppeteer/commit/510b36c50001c95783b00dc8af42b5801ec57358))
+* improve a11y snapshot handling if the tree is not correct ([#9405](https://github.com/puppup420247-org/puppeteer/issues/9405)) ([02fe501](https://github.com/puppup420247-org/puppeteer/commit/02fe50194e60bd14c3a82539473a0313ab88c766)), closes [#9404](https://github.com/puppup420247-org/puppeteer/issues/9404)
+* improve screenshot method types ([#9529](https://github.com/puppup420247-org/puppeteer/issues/9529)) ([6847f88](https://github.com/puppup420247-org/puppeteer/commit/6847f8835f28e97edba6fce76a4cbf85561482b9))
+* increase the default protocol timeout ([#9928](https://github.com/puppup420247-org/puppeteer/issues/9928)) ([4465f4b](https://github.com/puppup420247-org/puppeteer/commit/4465f4bd1900afc0b049ac863f4e372453a0c234))
+* make chromium-bidi an opt peer dep ([#9667](https://github.com/puppup420247-org/puppeteer/issues/9667)) ([c6054ac](https://github.com/puppup420247-org/puppeteer/commit/c6054ac1a56c08ee7bf01321878699b7b4ab4e0b))
+* make isIntersectingViewport work with SVG elements ([#10004](https://github.com/puppup420247-org/puppeteer/issues/10004)) ([656b562](https://github.com/puppup420247-org/puppeteer/commit/656b562c7488d4976a7a53264feef508c6b629dd))
+* make sure browser fetcher in launchers uses configuration ([#9493](https://github.com/puppup420247-org/puppeteer/issues/9493)) ([df55439](https://github.com/puppup420247-org/puppeteer/commit/df554397b51e97aea2765b325f9a887b50b9263a)), closes [#9470](https://github.com/puppup420247-org/puppeteer/issues/9470)
+* mimic rejection for PuppeteerUtil on early call ([#9589](https://github.com/puppup420247-org/puppeteer/issues/9589)) ([1980de9](https://github.com/puppup420247-org/puppeteer/commit/1980de91a161523c7098a79919b20e6d8d2e5d81))
+* **puppeteer-core:** avoid type instantiation errors ([#9370](https://github.com/puppup420247-org/puppeteer/issues/9370)) ([17f31a9](https://github.com/puppup420247-org/puppeteer/commit/17f31a9ee408ca5a08fe6dbceb8915e710156bd3)), closes [#9369](https://github.com/puppup420247-org/puppeteer/issues/9369)
+* **puppeteer-core:** target interceptor is not async ([#9430](https://github.com/puppup420247-org/puppeteer/issues/9430)) ([e3e9cc6](https://github.com/puppup420247-org/puppeteer/commit/e3e9cc622ac32f2067b6e74b5e8706c63169a157))
+* remove boundary conditions for visibility ([#9249](https://github.com/puppup420247-org/puppeteer/issues/9249)) ([e003513](https://github.com/puppup420247-org/puppeteer/commit/e003513c0c049aad38e374a16dc96c3e54ab0de5))
+* remove oopif expectations and fix oopif flakiness ([#9375](https://github.com/puppup420247-org/puppeteer/issues/9375)) ([810e0cd](https://github.com/puppup420247-org/puppeteer/commit/810e0cd74ecef353cfa43746c18bd5f580a3233d))
+* restore rimraf for puppeteer-core code ([#9815](https://github.com/puppup420247-org/puppeteer/issues/9815)) ([cefc4ea](https://github.com/puppup420247-org/puppeteer/commit/cefc4eab4750d2c1209eb36ca44f6963a4a6bf4c))
+* restore WaitTask terminate  condition ([#9612](https://github.com/puppup420247-org/puppeteer/issues/9612)) ([e16cbc6](https://github.com/puppup420247-org/puppeteer/commit/e16cbc6626cffd40d0caa30801620e7293455006))
+* **revert:** use LazyArg for puppeteer utilities ([#9590](https://github.com/puppup420247-org/puppeteer/issues/9590)) ([6edd996](https://github.com/puppup420247-org/puppeteer/commit/6edd99676827de2c83f7a858e4f903b1c34e7d35))
+* sort elements based on selector matching algorithm ([#9836](https://github.com/puppup420247-org/puppeteer/issues/9836)) ([9044609](https://github.com/puppup420247-org/puppeteer/commit/9044609be3ea78c650420533e7f6f40b83cedd99))
+* update dependencies ([#9781](https://github.com/puppup420247-org/puppeteer/issues/9781)) ([364b23f](https://github.com/puppup420247-org/puppeteer/commit/364b23f8b5c7b04974f233c58e5ded9a8f912ff2))
+* update troubleshooting guide links in errors ([#9821](https://github.com/puppup420247-org/puppeteer/issues/9821)) ([0165f06](https://github.com/puppup420247-org/puppeteer/commit/0165f06deef9e45862fd127a205ade5ad30ddaa3))
+* use LazyArg for puppeteer utilities ([#9575](https://github.com/puppup420247-org/puppeteer/issues/9575)) ([496658f](https://github.com/puppup420247-org/puppeteer/commit/496658f02945b53096483f36cb3d64556cff045e))
+* use puppeteer node for installation script ([#9489](https://github.com/puppup420247-org/puppeteer/issues/9489)) ([9bf90d9](https://github.com/puppup420247-org/puppeteer/commit/9bf90d9f4b5aeab06f8b433714712cad3259d36e))
+* use shadowRoot for tree walker ([#9950](https://github.com/puppup420247-org/puppeteer/issues/9950)) ([728547d](https://github.com/puppup420247-org/puppeteer/commit/728547d4608e8c601e209ede860493b1986da174))
+* viewport.deviceScaleFactor can be set to system default ([#9911](https://github.com/puppup420247-org/puppeteer/issues/9911)) ([022c909](https://github.com/puppup420247-org/puppeteer/commit/022c90932658d13ff4ae4aa51d26716f5dbe54ac))
+* waitForNavigation issue with aborted events ([#9883](https://github.com/puppup420247-org/puppeteer/issues/9883)) ([36c029b](https://github.com/puppup420247-org/puppeteer/commit/36c029b38d64a10590bfc74ecea255a58914b0d2))
+
+
+### Performance Improvements
+
+* amortize handle iterator ([#10002](https://github.com/puppup420247-org/puppeteer/issues/10002)) ([ab27f73](https://github.com/puppup420247-org/puppeteer/commit/ab27f738c9abb56f6083d02f7f45d2b8da9fc3f3))
+* use `querySelector*` for pure CSS selectors ([#9835](https://github.com/puppup420247-org/puppeteer/issues/9835)) ([8aea8e0](https://github.com/puppup420247-org/puppeteer/commit/8aea8e047103b72c0238dde8e4777acf7897ddaa))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @puppeteer/browsers bumped from 0.4.1 to 0.5.0
+
 ## [19.9.0](https://github.com/puppeteer/puppeteer/compare/puppeteer-core-v19.8.5...puppeteer-core-v19.9.0) (2023-04-13)
 
 

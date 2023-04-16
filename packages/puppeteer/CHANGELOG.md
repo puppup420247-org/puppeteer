@@ -8,6 +8,29 @@ All notable changes to this project will be documented in this file. See [standa
   * dependencies
     * @puppeteer/browsers bumped from 0.3.0 to 0.3.1
 
+## [19.10.0](https://github.com/puppup420247-org/puppeteer/compare/puppeteer-v19.9.0...puppeteer-v19.10.0) (2023-04-16)
+
+
+### Features
+
+* **chromium:** roll to Chromium 109.0.5412.0 (r1069273) ([#9364](https://github.com/puppup420247-org/puppeteer/issues/9364)) ([1875da6](https://github.com/puppup420247-org/puppeteer/commit/1875da61916df1fbcf98047858c01075bd9af189)), closes [#9233](https://github.com/puppup420247-org/puppeteer/issues/9233)
+* Default to not downloading if explicit browser path is set ([#9440](https://github.com/puppup420247-org/puppeteer/issues/9440)) ([d2536d7](https://github.com/puppup420247-org/puppeteer/commit/d2536d7cf5fa731250bbfd0d18959cacc8afffac)), closes [#9419](https://github.com/puppup420247-org/puppeteer/issues/9419)
+
+
+### Bug Fixes
+
+* consider downloadHost as baseUrl ([#9973](https://github.com/puppup420247-org/puppeteer/issues/9973)) ([05a44af](https://github.com/puppup420247-org/puppeteer/commit/05a44afe5affcac9fe0f0a2e83f17807c99b2f0c))
+* don't clean up previous browser versions ([#9568](https://github.com/puppup420247-org/puppeteer/issues/9568)) ([344bc2a](https://github.com/puppup420247-org/puppeteer/commit/344bc2af62e4068fe2cb8162d4b6c8242aac843b)), closes [#9533](https://github.com/puppup420247-org/puppeteer/issues/9533)
+* use puppeteer node for installation script ([#9489](https://github.com/puppup420247-org/puppeteer/issues/9489)) ([9bf90d9](https://github.com/puppup420247-org/puppeteer/commit/9bf90d9f4b5aeab06f8b433714712cad3259d36e))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * puppeteer-core bumped from 19.9.0 to 19.10.0
+    * @puppeteer/browsers bumped from 0.4.1 to 0.5.0
+
 ## [19.9.0](https://github.com/puppeteer/puppeteer/compare/puppeteer-v19.8.5...puppeteer-v19.9.0) (2023-04-13)
 
 
